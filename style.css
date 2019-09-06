@@ -19,7 +19,7 @@ body {
     border-radius: 50%;
     background: linear-gradient(#12c2e9, #c471ed, #f64f59);
     animation-name: animateCircle;
-    animation-duration: 0.5s;
+    animation-duration: 0.8s;
     animation-timing-function: linear;
     animation-iteration-count: infinite
 }
@@ -32,7 +32,7 @@ body {
     animation-name: logoFade;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-duration: 2s;
+    animation-duration: 1.8s;
     animation-direction: alternate;
 }
 
@@ -58,11 +58,11 @@ body {
 }
 
 .loader span:nth-child(3) {
-    filter: blur(25px);
+    filter: blur(15px);
 }
 
 .loader span:nth-child(4) {
-    filter: blur(50px);
+    filter: blur(20px);
 }
 
 @keyframes animateCircle {
@@ -80,59 +80,3 @@ body {
     background: #2F2F31;
     border-radius: 50%;
 }
-
-/*a {
-    text-decoration: none;
-    display: inline-block;
-    margin-right: 10px;
-    color: #fff;
-}
-
-header {
-    position: absolute;
-    margin-top: 0px;
-    animation-duration: 5s;
-    animation-timing-function: ease-out;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-name: sLeft;
-    background: #333;
-    padding: 30px;
-}
-
-@keyframes sLeft {
-    0% {
-        transform: translateX(-500%);
-    }
-    70% {
-        transform: translateX(-500%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
-}
-
-.boxed {
-  background: white;
-  position: absolute;
-  margin-top: 5%;
-  height: 80%;
-  width: 90%;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-name: sBottom;
-}
-
-@keyframes sBottom {
-    0% {
-        transform: translateY(-500%);
-    }
-    50% {
-        transform: translateY(-500%);
-    }
-    100% {
-        transform: translateY(0%);
-    }
-}*/
