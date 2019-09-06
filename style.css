@@ -1,0 +1,138 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: #2F2F31;
+}
+
+.loader {
+    position: absolute;
+    align-self: center;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: linear-gradient(#12c2e9, #c471ed, #f64f59);
+    animation-name: animateCircle;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite
+}
+
+.logo {
+    position: absolute;
+    align-self: center;
+    height: 250px;
+    width: 116px;
+    animation-name: logoFade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+}
+
+@keyframes logoFade {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.loader span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(#12c2e9, #c471ed, #f64f59);
+}
+
+.loader span:nth-child(1) {
+    filter: blur(5px);
+}
+
+.loader span:nth-child(2) {
+    filter: blur(10px);
+}
+
+.loader span:nth-child(3) {
+    filter: blur(25px);
+}
+
+.loader span:nth-child(4) {
+    filter: blur(50px);
+}
+
+@keyframes animateCircle {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+.loader:after {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    right: 35px;
+    bottom: 35px;
+    background: #2F2F31;
+    border-radius: 50%;
+}
+
+/*a {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+}
+
+header {
+    position: absolute;
+    margin-top: 0px;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: sLeft;
+    background: #333;
+    padding: 30px;
+}
+
+@keyframes sLeft {
+    0% {
+        transform: translateX(-500%);
+    }
+    70% {
+        transform: translateX(-500%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.boxed {
+  background: white;
+  position: absolute;
+  margin-top: 5%;
+  height: 80%;
+  width: 90%;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: sBottom;
+}
+
+@keyframes sBottom {
+    0% {
+        transform: translateY(-500%);
+    }
+    50% {
+        transform: translateY(-500%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}*/
