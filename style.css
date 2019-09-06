@@ -1,0 +1,8 @@
+html{
+	scroll-behavior: smooth;
+}
+body {
+	background: url('background.jpg') no-repeat;
+	background-size: cover;
+	color:black;
+}
